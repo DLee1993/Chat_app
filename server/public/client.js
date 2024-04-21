@@ -1,4 +1,4 @@
-const socket = io("ws://localhost:3500");
+const socket = io("https://chat-app-c5ih.onrender.com");
 
 const msgInput = document.querySelector("#message");
 const nameInput = document.querySelector("#name");
@@ -30,7 +30,7 @@ function enterRoom(e) {
             room: chatRoomInput.value,
         });
 
-        chatDisplay.textContent = ""
+        chatDisplay.textContent = "";
     }
 }
 
